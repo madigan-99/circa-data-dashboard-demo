@@ -1,0 +1,248 @@
+Client,Product,Product Stage,Scope,Impact Category,Step,Default Item,Emissions (kg CO2e),Plastic (kg),Water (m3),Amount of input assessed,Unit,
+Neo Bites,OG Dog Treat,Packaging,3,Direct Combustion,Plastic film,Plastic film,0.08491,0.028,,28,grams,
+Neo Bites,OG Dog Treat,Packaging,3,Direct Combustion,Truck transport,"Transport, by truck",0.01523,,,3218,km (distance from Boston to Austin),
+Neo Bites,OG Dog Treat,Packaging,3,Direct Combustion,Standup Pouches (100% recycled materials),"Product manufacturing, from Mixed Plastics, using 100% recycled inputs - US",0.01145,0.014,,14,grams,
+Neo Bites,OG Dog Treat,Raw Material,3,Direct Combustion,Cricket Powder,Cricket Powder,0.02748,,,100,grams,
+Neo Bites,OG Dog Treat,Raw Material,3,Direct Combustion,Egg,"Egg, raw, processed in FR | Ambient (average) | Cardboard | at supermarket - FR",0.02572,,,12,grams,
+Neo Bites,OG Dog Treat,Raw Material,3,Direct Combustion,Peanut butter,"Peanut butter or peanut paste, processed in FR | Ambient (long) | PVC | at distribution - FR",0.01639,,,11,grams,
+Neo Bites,OG Dog Treat,Raw Material,3,Direct Combustion,Oats,Oats,0.00972,,,12,grams,
+Neo Bites,OG Dog Treat,Raw Material,3,Direct Combustion,Truck transport,"Transport, by truck",0.00872,,,38,grams,
+Neo Bites,OG Dog Treat,Raw Material,3,Direct Combustion,Pumpkin,"Pumpkin (cucurbita moschata), consumption mix - FR",0.00438,,,25,grams,
+Neo Bites,OG Dog Treat,Raw Material,3,Direct Combustion,Cinnamon,"Cinnamon (canella), consumption mix - FR",0.00141,,,2,grams,
+Neo Bites,OG Dog Treat,Manufacturing,2,Direct Combustion,Electricity,"market for electricity, medium voltage  - TRE",0.05794,,,0.08,"kwh (2526 grams baked per batch, 25 units of 100 grams)",
+Neo Bites,OG Dog Treat,Distribution,3,Direct Combustion,Truck transport,"Transport, by truck",1.96E-02,,,174,"kg*km- 50% within Austin (32 km), 33% from Austin to LA (2217km), 17% from Austin to NYC (2817)",
+Neo Bites,OG Dog Treat,Disposal,3,Direct Combustion,Plastic,MSW landfilling of Mixed Plastics,0.00079,,,42,grams,
+Neo Bites,Superfood Topper,Packaging,3,Biodiversity Impacts,Kraft paper,"market for kraft paper, unbleached  - GLO",0.193,,,168,grams,(combined kraft paper and paperboard)
+Neo Bites,Superfood Topper,Packaging,3,Direct Combustion,Kraft paper transportation,Kraft paper-transportation,0.003,,,28,kgkm,"From Texas, assumed 500 km"
+Neo Bites,Superfood Topper,Packaging,3,Direct Combustion,Paperboard transportation,Paperboard-transportation,0.041,,,360.416,kgkm,"From Boston, 3218 km"
+Neo Bites,Superfood Topper,Packaging,3,Direct Combustion,Mailer bag liner,"Product manufacturing, from PLA, using 100% virgin inputs - US",0.008,0.028,,28,grams, (assumed biodegradable bag liner is PLA)
+Neo Bites,Superfood Topper,Packaging,3,Direct Combustion,Mailer bag liner transportation,Bag liner- transportation,0.01,,,90.104,kgkm,"From Boston, 3218 km"
+Neo Bites,Superfood Topper,Packaging,3,Biodiversity Impacts,Cardboard,Cardboard,0.005,,,224,grams,
+Neo Bites,Superfood Topper,Packaging,3,Direct Combustion,Cardboard transportation,Cardboard-transportation,0.013,,,112,kgkm,"From Texas, assumed 500 km"
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Cricket Powder,Cricket Powder,0.047,,,21,grams,"Halloran et al, 2017- Cricket Farming in Thailand"
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Cricket Powder transportation,Cricket Powder- transportation,0,,,0,kgkm,No Location Provided
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Egg,"Egg, raw, processed in FR | Ambient (average) | Cardboard | at supermarket - FR",0.047,,,20,grams,
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Egg transportation,Egg-transportation,0.004,,,64.36,kgkm,"From Boston, 3218 km"
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Oats,oats; at harvest; at farm; wet basis - US-MI,0.014,,,63,grams,
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Oats transportation,Oats-Transportation,0.012,,,107.037,kgkm,"From Cedar Rapids, Iowa, 1699 km"
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Pumpkin,"Pumpkin (cucurbita moschata), consumption mix - FR",0.008,,,48,grams,
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Pumpkin transportation,Pumpkin- transportation,0,,,0,kgkm,No Location Provided
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Coconut oil,"Crude coconut oil, from Philippines, at feed plant, FR U/kg - GLO",0.006,,,1.7,grams,
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Coconut oil transportation,Coconut oil-transportation,0,,,22.6661,kgkm,"From Philippines, assumed 13,333 km"
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Apples,"Apples, raw, without skin, cooked, boiled/cooked in water, processed in FR | Ambient (long) | PS | at distribution - FR",0.005,,,11.9,grams,
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Apple sauce transportation,Apple sauce-transportation,0.003,,,25.7635,kgkm,"From Great Lakes, USA. Assumed Michigan area, 2165 km"
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Flaxseed,"Flaxseed grain dried, stored and transported, processing - FR",0.002,,,3.4,grams,
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Flaxseed transportation,Flaxseed-transportation,0,,,0,kgkm,No Location Provided
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Cinnamon,"Cinnamon (canella), consumption mix - FR",0,,,0.3,grams,
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Cinnamon transportation,Cinnamon- transportation,0,,,3.6174,kgkm,"Assumed from China, 12058 km"
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Ginger,"Ginger, consumption mix - FR",0,,,0.3,grams,
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Ginger transportation,Ginger-transportation,0,,,4.248,kgkm,"Assumed from India, 14160 km"
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Dried parsely,"Parsley, dried, consumption mix - FR",0,,,0.4,grams,
+Neo Bites,Superfood Topper,Raw Material,3,Direct Combustion,Dried parsely transportation,Parsely-transportation,0,,,0.8,kgkm,"From Midwest, estimated 2000 km"
+Neo Bites,Superfood Topper,Manufacturing,2,Direct Combustion,Electricity,"market for electricity, medium voltage  - TRE",0.244,,,0.33,kwh,4kwh total/12 functional units per batch
+Neo Bites,Superfood Topper,Distribution,3,Direct Combustion,Truck transport,"Transport, by truck",0.08156,,,724,kgkm,"50% within Austin (32 km), 33% from Austin to LA (2217km), 17% from Austin to NYC (2817)"
+Neo Bites,Superfood Topper,Disposal,3,Direct Combustion,Paper,MSW recycling of Mixed Paper (primarily residential) - US,0.092,,,168,grams,
+Neo Bites,Superfood Topper,Disposal,3,Direct Combustion,Corrugate,MSW recycling of Corrugated Containers - US,0.02,,,224,grams,
+Neo Bites,Superfood Topper,Disposal,3,Direct Combustion,Plastic,MSW landfilling of PLA,0.001,,,28,grams,
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Cocoa beans,"Cocoa beans, at farm - GLO",0.4959,,0.0271,0.019,kg,"Imported from SimaPro, Average of modeled countries three countries modeled represent 56% of the global export : Ivory Coast (29%), Indonesia (16%) and Ghana (10%)  (FAOSTAT, 2010), combined cocoa and cocoa powder"
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Cocoa beans transportation,"Cocoa beans, transportation, ship",0.0011,,0,120.631,kgkm,Cocoa from Peru- 6349 km
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Organic sunflower lecithin,"Soybean oil and lecithin, France, at french mill, not deforestation  - FR",0.0885,,0.0007,0.001,kg,Proxy for sunflower lecithin
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Organic sunflower lecithin transportation,"Soybean oil and lecithin, transportation",0,,0,0,kgkm,Origin not provided
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Hazelnut,"Hazelnut, processed in FR | Ambient (long) | No packaging | at distribution - FR",0.0349,,0.0031,0.008,kg,
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Hazelnut transportation,"Hazelnut, transportation, truck",0.0041,,0,36.416,kgkm,"Hazelnuts from Hubbard, Oregon, 4552 km"
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Almond,almond production - US,0.0292,,0.0229,0.01,kg,
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Almond transportation,"Almond, Transportation, truck",0.0051,,0,44.98,kgkm,"almond from California, CA, 4498 km "
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Non-GMO allulose,"Fructose, production, at plant - FR",0.0225,,0.0008,0.018,kg,"Allulose is the sugary component of dates and raisin. On a scale, made from fructose through enzymatic reaction."
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Non-GMO allulose transportation,"Fuctose, transportation, truck",0.0002,,0,1.8,kgkm,Fructose/allulose from USA. Assumed to be 100 km away
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Coconut oil,"coconut oil production, crude - PH",0.0191,,0.0058,0.006,kg,
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Coconut oil transportation,"Coconut oil, transportation, ship",0.0007,,0,83.55,kgkm,"Coconut oil from Phillipines, 13925"
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Almond Milling,"Global milling process; soft wheat, steel-roller-milled, industrial production; French production mix, at plant; 1 kg bagged flour at the exit gate  (PDi) - RER",0.0079,,0.0001,0.015,kg,Included for cocoa powder and almond flour
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Hemp,"Hemp, grain, Champagne, at farm gate - FR",0.0072,,0,0.013,kg,
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Hemp transportation,"Hemp, transportation, truck",0.0037,,0,32.669,kgkm,"Hemp from Manitoba, Canada, 2513 km"
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Coconut,"coconut production, dehusked - IN",0.0065,,0.0002,0.021,kg,
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Coconut transportation,"Coconut, transportation, ship",0.0026,,0,300.741,kgkm,"Coconut from Sri Lanka, 14321 km"
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Sea salt,"Pure sea salt, no enrichment, processed in FR | Ambient (long) | PVC | at supermarket - FR",0.0006,,0,0.001,kg,
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Sea salt transportation,"Sea salt, transportation, by truck",0,,0,0.02,kgkm,"Sea salt from Washington USA, assumed to be 20 km"
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Monk fruit transportation,"Monk fruit, transportation, ship",0.0001,,0,11.693,kgkm,"Monk fruit from China, 11693 km"
+Revol Snax,Chocolate Almond,Raw Material,3,Direct Combustion,Water,"tap water production, conventional treatment  - RoW",0,,0,0.006,kg,
+Revol Snax,Chocolate Almond,Distribution,3,Direct Combustion,"Weighted distribution, by truck","Transport, by truck",0.0288,,0,255.57,kgkm,"10% to LA, 40% Washington DC/VA, 20% NYC, 10% Fl, 10% Tx, 5% Chicago, 5% Boston, MA"
+Revol Snax,Chocolate Almond,Disposal,3,Biodiversity Impacts,Corrugate cardboard box,MSW recycling of Corrugated Containers - US,0.011,,0,0.126,kg,
+Revol Snax,Chocolate Almond,Disposal,3,Direct Combustion,rPET #1 plastic tray,MSW recycling of PET - US,0.0107,,0,0.009,kg,
+Revol Snax,Chocolate Almond,Disposal,3,Direct Combustion,90% PCR flexible film bag,MSW landfilling of Mixed Plastics,0.0001,,0,0.004,kg,
+Revol Snax,Chocolate Almond,Packaging,3,Direct Combustion,90% PCR flexible film bag,Flexible Film Bag- W2R Database,0.0124,0.009,0.0001,0.009,kg,"Flexible film bag (90% PCR PET, 10% MET-PET)"
+Revol Snax,Chocolate Almond,Packaging,3,Direct Combustion,rPET #1 plastic tray,Recycled PET Packaging- W2R Database,0.0036,0.004,0,0.004,kg,rPET #1 plastic tray (recycled PET)
+Revol Snax,Chocolate Almond,Packaging,3,Biodiversity Impacts,Cardboard,Cardboard,0.0026,,0.0001,0.126,kg,4 functional units per cardboard package
+Revol Snax,Chocolate Almond,Packaging,3,Direct Combustion,Packaging Transport - Ship,"Transport, by ship",0.0005,,0,52,kgkm,"From Foshan, China"
+Revol Snax,Chocolate Almond,Packaging,3,Direct Combustion,Packaging Transport - Truck,"Transport, by truck",0.0002,,0,2,kgkm,"From Phoenixville, PA,"
+Revol Snax,Chocolate Almond,Manufacturing,2,Direct Combustion,Electricity,"Electricity generation, at grid, National",0.0025,,0,0.003,kwh,
+No Evil Foods,Comrade Cluck,Ingredient,3,Direct Combustion,Vital Wheat Gluten,Vital Wheat Gluten,0.104601171,,,109,g,1073 miles
+No Evil Foods,Comrade Cluck,Ingredient,3,Direct Combustion,Organic Garbanzo Bean Flour,Organic Garbanzo Bean Flour,0.042305233,,,24,g,2445 miles
+No Evil Foods,Comrade Cluck,Ingredient,3,Direct Combustion,Large Flake Fortified Nutritional Yeast,Large Flake Fortified Nutritional Yeast,0.009594423,,,12,g,2272 miles
+No Evil Foods,Comrade Cluck,Ingredient,3,Direct Combustion,Organic Soy Sauce,Organic Soy Sauce,0.101731612,,,24,g,2582 miles
+No Evil Foods,Comrade Cluck,Ingredient,3,Direct Combustion,Organic Spice Blend,Organic Spice Blend,0.009952368,,,5,g,150 miles
+No Evil Foods,Comrade Cluck,Ingredient,3,Direct Combustion,Water,Water,0.015838218,,109g,109,g,
+No Evil Foods,Comrade Cluck,Manufacture,2,Direct Combustion,Mixer 200kg,Mixer 200kg,0.003335063,,,,,8.25 kw
+No Evil Foods,Comrade Cluck,Manufacture,2,Direct Combustion,Eloma steam convection Oven,Eloma steam convection Oven,0.013475,,,,,11 kw
+No Evil Foods,Comrade Cluck,Manufacture,3,Direct Combustion,Packaging (3 process),Packaging (3 process),0.00091,,,,,
+No Evil Foods,Comrade Cluck,Packaging,3,Direct Combustion,Plastic Film (Food container),Plastic Film (Food container),0.011912336,0.006,,6,g,815 miles
+No Evil Foods,Comrade Cluck,Packaging,3,Biodiversity Impacts,Uncoated Kraft Chipboard,Uncoated Kraft Chipboard,0.028100652,,,33,g,10 miles
+No Evil Foods,Comrade Cluck,Packaging,3,Biodiversity Impacts,Cardboard corrugated shipping box,Cardboard corrugated shipping box,0.018822601,,,22,g,22 miles
+No Evil Foods,Comrade Cluck,Storage,1,Cold Storage,Refrigeration (-3°F),Refrigeration (-3°F),0.134627609,,,284,g,230 miles
+No Evil Foods,Comrade Cluck,Transport,3,Direct Combustion,Product Distribution Customer,"Product Distribution Customer - 50% closest, 50% farthest",0.177926659,,,,,331 & 2648 miles
+No Evil Foods,Comrade Cluck,Recycling,3,Biodiversity Impacts,Paper & Cardboard,Paper & Cardboard,0.0363,,,,,
+No Evil Foods,Comrade Cluck,Disposal,3,Direct Combustion,Organic Waste,Organic Waste,0.01981,,,,,
+No Evil Foods,Comrade Cluck,Disposal,3,Direct Combustion,General Waste,General Waste,0.000871119,,,,,
+No Evil Foods,El Capitan,Ingredient,3,Direct Combustion,Vital Wheat Gluten,Vital Wheat Gluten,0.088287227,,,92,g,1073
+No Evil Foods,El Capitan,Ingredient,3,Direct Combustion,Large Flake Fortified Nutritional Yeast,Large Flake Fortified Nutritional Yeast,0.016538021,,,4,g,2272
+No Evil Foods,El Capitan,Ingredient,3,Direct Combustion,50 grain Apple Cider Vinegar,50 grain Apple Cider Vinegar,0.052108047,,,24,g,687
+No Evil Foods,El Capitan,Ingredient,3,Direct Combustion,Organic Soy Sauce,Organic Soy Sauce,0.003257317,,,1,g,2582
+No Evil Foods,El Capitan,Ingredient,3,Direct Combustion,Tomato Paste,Tomato Paste,0.025900515,,,26,g,583
+No Evil Foods,El Capitan,Ingredient,3,Direct Combustion,Spice Blend,Spice Blend,0.007766368,,,26,g,150
+No Evil Foods,El Capitan,Ingredient,3,Direct Combustion,Water,Water,0.016128828,,111g,111,g,
+No Evil Foods,El Capitan,Manufacture,2,Direct Combustion,Mixer 200kg,Mixer 200kg,0.003335063,,,,,
+No Evil Foods,El Capitan,Manufacture,2,Direct Combustion,Eloma steam convection Oven,Eloma steam convection Oven,0.013475,,,,,
+No Evil Foods,El Capitan,Manufacture,3,Direct Combustion,Packaging (3 process),Packaging (3 process),0.00091,,,,,
+No Evil Foods,El Capitan,Packaging,3,Direct Combustion,Plastic Film (Food container),Plastic Film (Food container),0.011912336,0.006,,6,g,815
+No Evil Foods,El Capitan,Packaging,3,Biodiversity Impacts,Uncoated Kraft Chipboard,Uncoated Kraft Chipboard,0.028100652,,,33,g,10
+No Evil Foods,El Capitan,Packaging,3,Biodiversity Impacts,Cardboard corrugated shipping box,Cardboard corrugated shipping box,0.018822601,,,22,g,22
+No Evil Foods,El Capitan,Storage,1,Cold Storage,Refrigeration (-3°F),Refrigeration (-3°F),0.134153568,,,283,g,230
+No Evil Foods,El Capitan,Transport,3,Direct Combustion,Product Distribution Customer,"Product Distribution Customer - 50% closest, 50% farthest",0.177300157,,,,,331 & 2648 miles
+No Evil Foods,El Capitan,Recycling,3,Biodiversity Impacts,Paper & Cardboard,Paper & Cardboard,0.0363,,,,,
+No Evil Foods,El Capitan,Disposal,3,Direct Combustion,Organic Waste,Organic Waste,0.01988,,,,,
+No Evil Foods,El Capitan,Disposal,3,Direct Combustion,General Waste,General Waste,0.000871119,,,,,
+No Evil Foods,The Stallion,Ingredient,3,Direct Combustion,Vital Wheat Gluten,Vital Wheat Gluten,0.103641527,,,108,g,1073
+No Evil Foods,The Stallion,Ingredient,3,Direct Combustion,Organic Garbanzo Bean Flour,Organic Garbanzo Bean Flour,0.031728925,,,18,g,2245
+No Evil Foods,The Stallion,Ingredient,3,Direct Combustion,Organic Dark Red Kidney Beans,Organic Dark Red Kidney Beans,0.007506194,,,32,g,593
+No Evil Foods,The Stallion,Ingredient,3,Direct Combustion,Large Flake Fortified Nutritional Yeast,Large Flake Fortified Nutritional Yeast,0.037210548,,,9,g,2272
+No Evil Foods,The Stallion,Ingredient,3,Direct Combustion,Spice Blend,Spice Blend,0.004654629,,,14,g,150
+No Evil Foods,The Stallion,Ingredient,3,Direct Combustion,Organic Soy Sauce,Organic Soy Sauce,0.048859758,,,15,g,2582
+No Evil Foods,The Stallion,Ingredient,3,Direct Combustion,Water,Water,0.02077858,,143g,143,g,
+No Evil Foods,The Stallion,Manufacture,2,Direct Combustion,Mixer 200kg,Mixer 200kg,0.003335063,,,,,
+No Evil Foods,The Stallion,Manufacture,2,Direct Combustion,Eloma steam convection Oven,Eloma steam convection Oven,0.013475,,,,,
+No Evil Foods,The Stallion,Manufacture,3,Direct Combustion,Packaging (4 process),Packaging (4 process),0.00121,,,,,
+No Evil Foods,The Stallion,Packaging,3,Direct Combustion,Packaging Casing,Packaging Casing,0.012106629,0.006,,6,g,350
+No Evil Foods,The Stallion,Packaging,3,Direct Combustion,Clips (assume plastic PE-LLD),Clips (assume plastic PE-LLD),0.002406485,0.002,,2,g,250
+No Evil Foods,The Stallion,Packaging,3,Biodiversity Impacts,Uncoated Kraft Chipboard,Uncoated Kraft Chipboard,0.028100652,,,33,g,10
+No Evil Foods,The Stallion,Packaging,3,Biodiversity Impacts,Cardboard corrugated shipping box,Cardboard corrugated shipping box,0.018822601,,,22,g,22
+No Evil Foods,The Stallion,Storage,1,Cold Storage,Refrigeration (-3°F),Refrigeration (-3°F),0.161173898,,,340,g,230
+No Evil Foods,The Stallion,Transport,3,Direct Combustion,Product Distribution Customer,"Product Distribution Customer - 50% closest, 50% farthest",0.213010789,,,,,331 & 2648 miles
+No Evil Foods,The Stallion,Recycling,3,Biodiversity Impacts,Paper & Cardboard,Paper & Cardboard,0.0363,,,,,
+No Evil Foods,The Stallion,Disposal,3,Direct Combustion,Organic Waste,Organic Waste,0.02373,,,,,
+No Evil Foods,The Stallion,Disposal,3,Direct Combustion,General Waste,General Waste,0.004355596,,,,,
+No Evil Foods,Pit Boss,Ingredient,3,Direct Combustion,Vital Wheat Gluten,Vital Wheat Gluten,0.062376845,,,65,g,1073
+No Evil Foods,Pit Boss,Ingredient,3,Direct Combustion,Organic Garbanzo Bean Flour,Organic Garbanzo Bean Flour,0.026440771,,,15,g,2445
+No Evil Foods,Pit Boss,Ingredient,3,Direct Combustion,Large Flake Fortified Nutritional Yeast,Large Flake Fortified Nutritional Yeast,0.028941537,,,7,g,2272
+No Evil Foods,Pit Boss,Ingredient,3,Direct Combustion,Organic Soy Sauce,Organic Soy Sauce,0.048859758,,,15,g,2582
+No Evil Foods,Pit Boss,Ingredient,3,Direct Combustion,Spice Blend,Spice Blend,0.001018421,,,3,g,150
+No Evil Foods,Pit Boss,Ingredient,3,Direct Combustion,BBQ Sauce,BBQ Sauce,0.232576468,,,113,g,2667
+No Evil Foods,Pit Boss,Ingredient,3,Direct Combustion,Water,Water,0.009444809,,65g,65,g,
+No Evil Foods,Pit Boss,Manufacture,2,Direct Combustion,Mixer 200kg,Mixer 200kg,0.003335063,,,8.25 kw,,
+No Evil Foods,Pit Boss,Manufacture,2,Direct Combustion,Eloma steam convection Oven,Eloma steam convection Oven,0.013475,,,11 kw,,
+No Evil Foods,Pit Boss,Manufacture,3,Direct Combustion,Packaging (3 process),Packaging (3 process),0.00091,,,,,
+No Evil Foods,Pit Boss,Packaging,3,Direct Combustion,Plastic Film,Plastic Film,0.011912336,0.006,,6,g,815
+No Evil Foods,Pit Boss,Packaging,3,Biodiversity Impacts,Uncoated Kraft Chipboard,Uncoated Kraft Chipboard,0.028100652,,,33,g,10
+No Evil Foods,Pit Boss,Packaging,3,Biodiversity Impacts,Cardboard corrugated shipping box,Cardboard corrugated shipping box,0.018822601,,,22,g,22
+No Evil Foods,Pit Boss,Storage,1,Cold Storage,Refrigeration (-3°F),Refrigeration (-3°F),0.134153568,,,283,g,230
+No Evil Foods,Pit Boss,Transport,3,Direct Combustion,Product Distribution Customer,"Product Distribution Customer - 50% closest, 50% farthest",0.177300157,,,,,331 & 2648 miles
+No Evil Foods,Pit Boss,Recycling,3,Biodiversity Impacts,Paper & Cardboard,Paper & Cardboard,0.0363,,,,,
+No Evil Foods,Pit Boss,Disposal,3,Direct Combustion,Organic Waste,Organic Waste,0.01981,,,,,
+No Evil Foods,Pit Boss,Disposal,3,Direct Combustion,General Waste,General Waste,0.004065223,,,,,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Charley St,Chorizo,0,0,0,0,0,0,0,0,0,0,
+Fulton,The Classic Insole,Raw Material,3,Direct Combustion,Cactus leather,Cactus Leather- for Fulton,2.08853,0,0.00402,0.0103 kg,"Including 3% waste. Check tab ""cactus leather research"" for assumptions. Hemp leather data used as there was no data on cactus leather.",
+Fulton,The Classic Insole,Raw Material,3,Direct Combustion,"Cactus leather transport, air","transport, freight, aircraft, intercontinental - RER",0.09869,0,1.80E-04,8900 km,"air distance travelled by cactus leather. Guadalajara, Mexico to Porto in Portugal 8900 km",
+Fulton,The Classic Insole,Raw Material,3,Direct Combustion,Natural latex foam,latex production - RER,0.0681,0,0.00157,0.025 kg,,
+Fulton,The Classic Insole,Raw Material,3,Direct Combustion,"Natural latex foam transport, ferry","transport, freight, lorry 16-32 metric ton, EURO5 - RER",0.00031,0,8.52E-07,74 km,"Natural Latex Foam Distance. From Aveiro to Porto, Portugl. 74 km",
+Fulton,The Classic Insole,Raw Material,3,Direct Combustion,Raw cork,"market for cork, raw - GLO",0.00344,0,1.36E-05,0.06,,
+Fulton,The Classic Insole,Raw Material,3,Direct Combustion,"Cork transport, road","transport, freight, lorry 16-32 metric ton, EURO5 - RER",5.96E-05,0,1.66E-07,6 km,"Distance travelled for cork. Within Porto, Portugal. 6km",
+Fulton,The Classic Insole,Raw Material,3,Direct Combustion,Water,market for tap water - Europe without Switzerland,5.33E-06,0,1.51E-05,0.015 kg,water-based glue,
+Fulton,The Classic Insole,Disposal,3,Direct Combustion,"Mixed paper, landfill",MSW landfilling of Mixed Paper (primarily residential); no LFG recovery - US,1.02787,0,0,,"33% of mixed paper landfilled, according to EPA in 2018",
+Fulton,The Classic Insole,Disposal,3,Direct Combustion,"Mixed paper, recycling",MSW recycling of Mixed Paper (primarily residential) - US,0.36537,0,0,,"67% of mixed paper recycled, according to EPA in 2018",
+Fulton,The Classic Insole,Disposal,3,Direct Combustion,"Corrugate, landfill",MSW landfilling of Corrugated Containers; no LFG recovery,0.1065,0,0,,"33% of cardboard landfilled, according to EPA in 2018",
+Fulton,The Classic Insole,Disposal,3,Direct Combustion,"Corrugate, recycling",MSW recycling of Corrugated Containers - US,0.00531,0,0,,"67% of cardboard recycled, according to EPA in 2018",
+Fulton,The Classic Insole,Distribution,3,Direct Combustion,"Transport to fulfillment center, air","transport, freight, aircraft, intercontinental - RER",1.18445,0,0.00211,5333 km,Air distance travelled for final product- Porto to NYC (km),
+Fulton,The Classic Insole,Distribution,3,Direct Combustion,"Transport to customer, road","transport, freight, lorry 16-32 metric ton, EURO5 - RER",0.05373,0,0.00015,,"Distribution with the US (Within NYC 25%, California 18%, New Jersey 7%, Illinois 4%, Pennsylvania 8%, Texas 5%, rest of the US travelled about 2000 km (33%))",
+Fulton,The Classic Insole,Manufacturing,2,Direct Combustion,Electricity,"market for electricity, medium voltage - PT",0.04628,0,0.00057,0.125 kwh,10 mins per pair at 0.75 kw per hour,
+Fulton,The Classic Insole,Packaging,3,Biodiversity Impacts,"Paper production, tape","paper production, woodcontaining, lightweight coated - RER",0.00207,0,0.00006,0.0014 kg,Weight of tape,
+Fulton,The Classic Insole,Packaging,3,Direct Combustion,"Tape transport, transoceanic ship","transport, freight, sea, transoceanic ship - GLO",0.0003,0,8.67E-07,18590 km,"Ocean Distance for tape. Port of Hong Kong to Porto, Portugal (km)",
+Fulton,The Classic Insole,Packaging,3,Biodiversity Impacts,Cardboard,Cardboard,0.00189,0,6.56E-05,0.0907 kg,Weight of cardboard,
+Fulton,The Classic Insole,Packaging,3,Direct Combustion,"Cardboard transport, road","transport, freight, lorry 16-32 metric ton, EURO5 - RER",0.0009,0,2.51E-06,60 km,Land distance travelled by cardboard box. Feguieras in Portugal to Porto Portugal (km),
+Fulton,The Classic Insole,Packaging,3,Biodiversity Impacts,"Paper production, stickers","paper production, woodcontaining, lightweight coated - RER",0.00415,0,0.00012,0.0028,Weight of 2 stickers,
+Fulton,The Classic Insole,Packaging,3,Direct Combustion,"Sticker transport, transoceanic ship","transport, freight, sea, transoceanic ship - GLO",0.00059,0,1.73E-06,18590 km,"Ocean Distance for sticker. Port of Hong Kong to Porto, Portugal (km)",
+Fulton,The Classic Insole,Packaging,3,Biodiversity Impacts,Kraft paper,"market for kraft paper, unbleached - GLO",0.00161,0,7.21E-05,0.0014,Weight of tissue paper,
+Fulton,The Classic Insole,Packaging,3,Direct Combustion,"Tissue paper transport, transoceanic ship","transport, freight, sea, transoceanic ship - GLO",0.0003,0,8.67E-07,18590 km,"Ocean Distance for tissue paper. Port of Hong Kong to Porto, Portugal (km)",
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+No Evil Foods,The Stallion,Transport,3,Direct Combustion,,Product Distribution Customer - closest,0.047335731,,,,,331
+No Evil Foods,The Stallion,Transport,3,Direct Combustion,,Product Distribution Customer - farthest,0.378685846,,,,,2648
+No Evil Foods,Pit Boss,Transport,3,Direct Combustion,,Product Distribution Customer - closest,0.039400035,,,,,331
+No Evil Foods,Pit Boss,Transport,3,Direct Combustion,,Product Distribution Customer - farthest,0.315200278,,,,,2648
+No Evil Foods,El Capitan,Transport,3,Direct Combustion,,Product Distribution Customer - closest,0.039400035,,,,,331
+No Evil Foods,El Capitan,Transport,3,Direct Combustion,,Product Distribution Customer - farthest,0.315200278,,,,,2648
+No Evil Foods,Comrade Cluck,Transport,3,Direct Combustion,,Product Distribution Customer - closest,0.039539257,,,,,331 miles
+No Evil Foods,Comrade Cluck,Transport,3,Direct Combustion,,Product Distribution Customer - farthest,0.31631406,,,,,2648 miles
