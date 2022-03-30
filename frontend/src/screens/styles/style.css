@@ -1,0 +1,10 @@
+.custom-font {
+  font-family: "Karla";
+  padding: 1rem;
+}
+.modal-header {
+  font-family: "Neue Machina Bold";
+}
+.modal-footer {
+  font-family: "Neue Machina Light";
+}

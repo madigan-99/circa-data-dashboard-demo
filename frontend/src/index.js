@@ -4,9 +4,11 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MenuProvider from "react-flexible-sliding-menu";
 import { BrowserRouter } from "react-router-dom";
-import Menu from "./screens/menu.js";
+import "./fonts/Karla/Karla-VariableFont_wght.ttf";
+import "./fonts/Karla/Karla-Italic-VariableFont_wght.ttf";
+import "./fonts/PPNeueMachina-Bold v1.2/PPNeueMachina-Bold.ttf";
+import "./fonts/PPNeueMachina-Light v1.2/PPNeueMachina-Light.ttf";
 
 ReactDOM.render(
   <BrowserRouter>

@@ -4,11 +4,9 @@ import "./styles/header.css";
 import Plot from "react-plotly.js";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faCoffee } from "@fortawesome/free-solid-svg-icons";
-import { Nav, SideNav, LeftAlign, Center } from "./styles/styles";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Nav, HeaderItem } from "./styles/styles";
 import Menu from "./menu";
-import MenuProvider from "react-flexible-sliding-menu";
-import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 
 export default function Header(props) {
   // const [show, setShow] = useState(false);
@@ -18,16 +16,19 @@ export default function Header(props) {
   return (
     <>
       <Nav>
-        <LeftAlign>
+        <HeaderItem>
+          <FontAwesomeIcon icon={faBars} onClick={handleClick} />
           <NavLink to="/">
             <h1> {process.env.REACT_APP_CLIENT} </h1>
           </NavLink>
-          <FontAwesomeIcon icon={faBars} onClick={handleClick} />
-        </LeftAlign>
-        <Center>
+        </HeaderItem>
+        <HeaderItem>
           <h2>{props.product ? props.product : ""}</h2>
-        </Center>
-        <div> &nbsp;</div>
+        </HeaderItem>
+
+        <HeaderItem>
+          <img src="circa-logo.png" />
+        </HeaderItem>
       </Nav>
       <Menu
         stateChanger={props.stateChanger}

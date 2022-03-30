@@ -1,26 +1,16 @@
 import React, { useEffect, useContext } from "react";
 import {
   ValueBox,
-  Selector,
   Row,
-  Label,
   Table,
   TableWrapper,
-  Title,
   BodyContainer,
   Column,
 } from "./styles/styles.js";
 import { useState } from "react";
 import Titles from "./../components/titles";
-import Select from "react-select";
+
 import Plot from "react-plotly.js";
-import getData from "../library";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
-import { Modal, Button } from "react-bootstrap";
-import { render } from "react-dom";
-import context from "react-bootstrap/esm/AccordionContext";
-import { Menu } from "./menu";
 
 export function Other(props) {
   const [scope, selectScope] = useState("all");
@@ -29,7 +19,7 @@ export function Other(props) {
   const [treeMapData, setTreeMapData] = useState(undefined);
   const [treeMapDataPlastic, setTreeMapDataPlastic] = useState(undefined);
   const [impactData, setImpactData] = useState(undefined);
-  const [dataTable, setDataTable] = useState(undefined);
+  const [dataTableWater, setDataTableWater] = useState(undefined);
   const [dataTablePlastic, setDataTablePlastic] = useState(undefined);
   const [show, setShow] = useState(false);
   const [summary, setSummary] = useState(undefined);
@@ -45,40 +35,39 @@ export function Other(props) {
     const value = event.value;
     selectScope(value);
   };
-  // console.log({ product });
   useEffect(() => {
     //  let temp = "http://127.0.0.1:5000/testpath";
-    let temp =
+    let scopes_url =
       process.env.REACT_APP_SERVER +
       "/getScopes/" +
       props.product +
       "/" +
       props.cradeltoGrave;
-    let temp2 =
+    let fulldata_url =
       process.env.REACT_APP_SERVER +
       "/fullDataBar/" +
       props.product +
       "/" +
       props.cradeltoGrave;
-    let temp3 =
+    let dictionary_url =
       process.env.REACT_APP_SERVER +
       "/toDict/" +
       props.product +
       "/" +
       props.cradeltoGrave;
-    let temp4 =
+    let treemap_water_url =
       process.env.REACT_APP_SERVER +
       "/getStageRelationWater/" +
       props.product +
       "/" +
       props.cradeltoGrave;
-    let temp7 =
+    let treemap_plastic_url =
       process.env.REACT_APP_SERVER +
       "/getStageRelationPlastic/" +
       props.product +
       "/" +
       props.cradeltoGrave;
-    let temp5 =
+    let summary_url =
       process.env.REACT_APP_SERVER +
       "/summary_statistics/" +
       props.product +
@@ -87,14 +76,7 @@ export function Other(props) {
       "/" +
       props.cradeltoGrave;
 
-    let temp6 =
-      process.env.REACT_APP_SERVER +
-      "/getImpactRelation/" +
-      props.product +
-      "/" +
-      props.cradeltoGrave;
-
-    fetch(temp2, {
+    fetch(fulldata_url, {
       mode: "cors",
       method: "GET",
       headers: {
@@ -107,7 +89,7 @@ export function Other(props) {
         setFullData(parsed);
       });
     });
-    fetch(temp4, {
+    fetch(treemap_water_url, {
       mode: "cors",
       method: "GET",
       headers: {
@@ -117,10 +99,9 @@ export function Other(props) {
     }).then((response) => {
       response.json().then((data) => {
         setTreeMapData(data);
-        console.log(data);
       });
     });
-    fetch(temp7, {
+    fetch(treemap_plastic_url, {
       mode: "cors",
       method: "GET",
       headers: {
@@ -130,11 +111,10 @@ export function Other(props) {
     }).then((response) => {
       response.json().then((data) => {
         setTreeMapDataPlastic(data);
-        console.log(data);
       });
     });
 
-    fetch(temp5, {
+    fetch(summary_url, {
       mode: "cors",
       method: "GET",
       headers: {
@@ -144,24 +124,10 @@ export function Other(props) {
     }).then((response) => {
       response.json().then((data) => {
         setSummary(data);
-        console.log(data);
       });
     });
 
-    fetch(temp6, {
-      mode: "cors",
-      method: "GET",
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "application/json",
-      },
-    }).then((response) => {
-      response.json().then((data) => {
-        setImpactData(data);
-      });
-    });
-
-    fetch(temp, {
+    fetch(scopes_url, {
       mode: "cors",
       method: "GET",
       headers: {
@@ -178,7 +144,7 @@ export function Other(props) {
       });
     });
 
-    fetch(temp3, {
+    fetch(dictionary_url, {
       mode: "cors",
       method: "GET",
       headers: {
@@ -188,16 +154,15 @@ export function Other(props) {
     }).then((response) => {
       response.json().then((data) => {
         setFullDataDict(data);
-        console.log(data);
-        setDataTable(JsonDataDisplay(data));
-        setDataTable(JsonDataDisplayPlastic(data));
+        setDataTableWater(JsonDataDisplayWater(data));
+        setDataTablePlastic(JsonDataDisplayPlastic(data));
         // renderTree();
       });
     });
-  }, [scope, props.product]);
+  }, [scope, props.product, props.cradeltoGrave]);
 
   // https://www.geeksforgeeks.org/how-to-parse-json-data-into-react-table-component/
-  function JsonDataDisplay(data) {
+  function JsonDataDisplayWater(data) {
     const DisplayData = Object.values(data).map((info) => {
       if (info["Water (m3)"] > 0) {
         return (
@@ -215,14 +180,16 @@ export function Other(props) {
 
   function JsonDataDisplayPlastic(data) {
     const DisplayData = Object.values(data).map((info) => {
-      return (
-        <tr key={info["Step"] + info["Emissions (kg CO2e)"]}>
-          <td>{info["Scope"]}</td>
-          <td>{info["Product Stage"]}</td>
-          <td>{info["Step"]}</td>
-          <td>{info["Plastic (kg)"]}</td>
-        </tr>
-      );
+      if (info["Plastic (kg)"] > 0) {
+        return (
+          <tr key={info["Step"] + info["Emissions (kg CO2e)"]}>
+            <td>{info["Scope"]}</td>
+            <td>{info["Product Stage"]}</td>
+            <td>{info["Step"]}</td>
+            <td>{info["Plastic (kg)"]}</td>
+          </tr>
+        );
+      }
     });
     return DisplayData;
   }
@@ -232,15 +199,17 @@ export function Other(props) {
       <Titles
         title="Water by Stage"
         modal_title="About Stage"
-        modal_description="Lorem Ipsum"
+        modal_description="A Life Cycle Assessment (LCA) evaluates the footprint of a product across a chronological progression of it's life cycle. Stages refer to different types of activities throughout a product life cycle; these include Raw Materials, Manufacturing, Packaging, Distribution, and Disposal.
+        "
         setShow={setShow}
         show={show}
       />
       <Row>
         <Column>
           <ValueBox>
-            <h2>{summary ? summary.total_water : "Loading..."} (m3)</h2>
-            <h4>Total</h4>
+            <h4>Water Usage for Product</h4>
+            <h2>{summary ? summary.total_water : "Loading..."}</h2>
+            <h5>(m3)</h5>
           </ValueBox>
           <TableWrapper>
             {" "}
@@ -253,44 +222,48 @@ export function Other(props) {
                   <th>Water (m3)</th>
                 </tr>
               </thead>
-              <tbody>{dataTable}</tbody>
+              <tbody>{dataTableWater}</tbody>
             </Table>
           </TableWrapper>
         </Column>
-        <Plot
-          className="treemap"
-          data={[
-            {
-              type: "treemap",
-              labels: treeMapData ? treeMapData.labels : [0],
-              parents: treeMapData ? treeMapData.parents : [0],
-              values: treeMapData ? treeMapData.values : [0],
-              branchvalues: "total",
-            },
-          ]}
-          layout={{
-            title: treeMapData
-              ? "Treemap of Stages by Step"
-              : "Chart is loading...",
-            paper_bgcolor: "rgba(0,0,0,0)",
-            plot_bgcolor: "rgba(0,0,0,0)",
-            width: 860,
-            height: 525,
-          }}
-        />
+        <Column>
+          <Plot
+            className="treemap"
+            data={[
+              {
+                type: "treemap",
+                labels: treeMapData ? treeMapData.labels : [0],
+                parents: treeMapData ? treeMapData.parents : [0],
+                values: treeMapData ? treeMapData.values : [0],
+                branchvalues: "total",
+              },
+            ]}
+            layout={{
+              title: treeMapData
+                ? "Treemap of Stages by Step"
+                : "Chart is loading...",
+              paper_bgcolor: "rgba(0,0,0,0)",
+              plot_bgcolor: "rgba(0,0,0,0)",
+              width: 860,
+              height: 525,
+            }}
+          />
+        </Column>
       </Row>
       <Titles
         title="Plastic Usage"
         modal_title="About Stage"
-        modal_description="Lorem Ipsum"
+        modal_description="A Life Cycle Assessment (LCA) evaluates the footprint of a product across a chronological progression of it's life cycle. Stages refer to different types of activities throughout a product life cycle; these include Raw Materials, Manufacturing, Packaging, Distribution, and Disposal.
+        "
         setShow={setShow}
         show={show}
       />
       <Row>
         <Column>
           <ValueBox>
-            <h2>{summary ? summary.total_plastic : "Loading..."} (m3)</h2>
-            <h4>Total</h4>
+            <h4>Plastic Usage for Product</h4>
+            <h2>{summary ? summary.total_plastic : "Loading..."} </h2>
+            <h5>(kg)</h5>
           </ValueBox>
           <TableWrapper>
             {" "}
@@ -303,31 +276,33 @@ export function Other(props) {
                   <th>Plastic (kg)</th>
                 </tr>
               </thead>
-              <tbody>{dataTable}</tbody>
+              <tbody>{dataTablePlastic}</tbody>
             </Table>
           </TableWrapper>
         </Column>
-        <Plot
-          className="treemap"
-          data={[
-            {
-              type: "treemap",
-              labels: treeMapDataPlastic ? treeMapDataPlastic.labels : [0],
-              parents: treeMapDataPlastic ? treeMapDataPlastic.parents : [0],
-              values: treeMapDataPlastic ? treeMapDataPlastic.values : [0],
-              branchvalues: "total",
-            },
-          ]}
-          layout={{
-            title: treeMapDataPlastic
-              ? "Treemap of Stages by Step"
-              : "Chart is loading...",
-            paper_bgcolor: "rgba(0,0,0,0)",
-            plot_bgcolor: "rgba(0,0,0,0)",
-            width: 860,
-            height: 525,
-          }}
-        />
+        <Column>
+          <Plot
+            className="treemap"
+            data={[
+              {
+                type: "treemap",
+                labels: treeMapDataPlastic ? treeMapDataPlastic.labels : [0],
+                parents: treeMapDataPlastic ? treeMapDataPlastic.parents : [0],
+                values: treeMapDataPlastic ? treeMapDataPlastic.values : [0],
+                branchvalues: "total",
+              },
+            ]}
+            layout={{
+              title: treeMapDataPlastic
+                ? "Treemap of Stages by Step"
+                : "Chart is loading...",
+              paper_bgcolor: "rgba(0,0,0,0)",
+              plot_bgcolor: "rgba(0,0,0,0)",
+              width: 860,
+              height: 525,
+            }}
+          />
+        </Column>
       </Row>
     </BodyContainer>
   );

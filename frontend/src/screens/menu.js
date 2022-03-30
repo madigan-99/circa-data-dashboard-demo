@@ -60,6 +60,8 @@ export default function Menu(props) {
         <Label>Select a Desired Scope</Label>
         <Select
           options={options}
+          className="selector-custom"
+          classNamePrefix="selector-options"
           onChange={handler}
           selected={options[0]}
           // value={scope}
@@ -73,7 +75,9 @@ export default function Menu(props) {
         <Titles
           title="Cradel to Grave"
           modal_title="About Cradel to Grave"
-          modal_description="Lorem Ipsum"
+          modal_description={
+            "Cradle-to-grave \nCradle-to-grave refers to the carbon impact of a product at every stage of a product's life-cycle, from the time the natural resources are extracted from the ground and processed— through to manufacturing, transportation, product use, and ultimately, disposal. Cradle-to-grave assessments are important, wholistic views of the footprint of a product; in many cases, the majority of a product's footprint comes from the use & disposal stages.\nCradle-to-Gate\nCradle-to-Gate is a system boundary that only considers the impact of a product or service from the moment it’s produced to the moment it becomes available for purchase, such as on a store shelf. Impacts from the end distribution, use, or disposal of the product are not included. This means that the carbon stored in the organic components of the product (biogenic carbon), normally released at the product end-of-life stage, is not factored into the footprint. Cradle-to-gate assessments are primarily performed today to comply with carbon labeling standards from the GHG Protocol."
+          }
           setShow={setShow}
           show={show}
         />
@@ -85,7 +89,7 @@ export default function Menu(props) {
             key={idx}
             id={`radio-${idx}`}
             type="radio"
-            variant={idx % 2 ? "outline-success" : "outline-danger"}
+            variant={idx % 2 ? "outline-light" : "outline-dark"}
             name="radio"
             value={radio.value}
             checked={props.cradeltoGrave === radio.value}

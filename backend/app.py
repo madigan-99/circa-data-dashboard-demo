@@ -1,5 +1,6 @@
 from enum import unique
 from fileinput import FileInput
+from signal import valid_signals
 from stat import FILE_ATTRIBUTE_NOT_CONTENT_INDEXED
 from tkinter import S
 from xml.dom.expatbuilder import FilterVisibilityController
@@ -17,6 +18,7 @@ import io
 import base64
 
 # https://flask.palletsprojects.com/en/2.0.x/server/
+# $env:FLASK_ENV = "development" 
 
 app = Flask(__name__)
 CORS(app)
@@ -131,7 +133,6 @@ def createStageRelationWater(product, cradeltoGrave):
     labels = np.concatenate((["Total"], filtered_products['Step'],  filtered_products['Product Stage'].unique()))
     parents = np.concatenate(([""], filtered_products['Product Stage'], np.repeat(["Total"], len(filtered_products["Product Stage"].unique()))))
     temp = filtered_products.groupby('Product Stage', as_index=True, sort=False).agg({"Water (m3)": "sum"})
-    print( temp)
     values = np.concatenate(([filtered_products["Water (m3)"].sum()], filtered_products["Water (m3)"], temp['Water (m3)']))
     map_data = {"labels": labels.tolist(), "parents": parents.tolist(), "values": values.tolist()}
     return json.dumps(map_data)
@@ -196,16 +197,32 @@ def createSankeyData(product, cradeltoGrave):
 def downloadImage(product):
     if(product == 'undefined'):
        product = json.loads(productSelection())[0]
-    img = Image.open("./circle.png")
-    draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("arial.ttf",40, encoding="unic")
-    # draw.text((x, y),"Sample Text",(r,g,b))
-    test = json.loads(getsummary('all', product, '1')).get('total_emissions')
-    dimensions = np.asarray(img.size)
-    draw.text((dimensions[0]/2.3, dimensions[1]/2.5),"Total Carbon:",(0,0,0),font=font)
-    draw.text((dimensions[0]/2.5, dimensions[1]/2),str(test),(0,0,0),font=font)
-    data = io.BytesIO()
-    img.save(data, "png")
-    encoded_img_data = base64.b64encode(data.getvalue())
-    temp = encoded_img_data.decode() # not just image
-    return json.dumps(temp)
+    arrAns = downloadImageSet(product)
+    # img = Image.open("./footprint1.png")
+    # draw = ImageDraw.Draw(img)
+    # font = ImageFont.truetype("arial.ttf", 80, encoding="unic")
+    # emissions_val = json.loads(getsummary('all', product, '1')).get('total_emissions')
+    # draw.text((10, 10),str(emissions_val),font=font, fill="#fff")
+    # data = io.BytesIO()
+    # img.save(data, "png")
+    # encoded_img_data = base64.b64encode(data.getvalue())
+    # temp = encoded_img_data.decode() # not just image
+    return json.dumps(arrAns)
+def downloadImageSet(product):
+    strings = {}
+    for i in [1, 2, 3, 4]: 
+        name = "./footprint" + str(i) + ".png"
+        img = Image.open(name)
+        draw = ImageDraw.Draw(img)
+        font = ImageFont.truetype("PPNeueMachina-Light.ttf", 85, encoding="unic")
+        emissions_val = json.loads(getsummary('all', product, '1')).get('total_emissions')
+        if(i%2==0):
+            draw.text((10, 10),str(emissions_val),font=font, fill="#000")
+        if(i%2==1):
+            draw.text((10, 10),str(emissions_val),font=font, fill="#fff")
+        data = io.BytesIO()
+        img.save(data, "png")
+        encoded_img_data = base64.b64encode(data.getvalue())
+        temp = encoded_img_data.decode() # not just image
+        strings[i] = temp
+    return strings

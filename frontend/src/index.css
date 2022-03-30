@@ -1,13 +1,33 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: "Neue Machina Light";
+  src: local("Neue Machina Light"),
+    url("./fonts/PPNeueMachina-Light\ v1.2/PPNeueMachina-Light.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Neue Machina Bold";
+  src: local("Neue Machina Bold"),
+    url("./fonts/PPNeueMachina-Bold\ v1.2/PPNeueMachina-Bold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Karla";
+  src: local("Karla"),
+    url("./fonts/Karla/Karla-VariableFont_wght.ttf") format("truetype");
 }

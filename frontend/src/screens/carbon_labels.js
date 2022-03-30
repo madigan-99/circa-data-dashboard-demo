@@ -2,15 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles/header.css";
 import Plot from "react-plotly.js";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faCoffee } from "@fortawesome/free-solid-svg-icons";
 import {
   BodyContainer,
   Column,
   Title,
   FAQTitle,
   FAQBox,
+  CarbonSet,
 } from "./styles/styles";
 import { Modal, Button } from "react-bootstrap";
 import { Row, PseudoCarbon } from "./styles/styles";
@@ -27,50 +25,57 @@ export function CarbonLabel(props) {
       method: "GET",
       headers: {
         "Access-Control-Allow-Origin": "*",
-        "Content-Type": "application/octet-stream",
+        // "Content-Type": "application/octet-stream",
       },
-    })
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (text) {
-        setImageCoded(text);
+    }).then((response) => {
+      response.json().then((data) => {
+        setImageCoded(data);
+        console.log(imgCoded);
       });
+    });
   }, [props.product]);
 
   function getDateLabel() {
     const d = new Date(Date.now()).toLocaleString().split(",")[0];
     return d;
   }
-  return (
-    <BodyContainer show={props.show}>
-      <Row>
-        <PseudoCarbon>
-          {imgCoded ? (
-            <img src={"data:image/png;base64," + imgCoded} width="25%" />
-          ) : (
-            <br />
-          )}
-        </PseudoCarbon>
-      </Row>
-      <Row>
-        <a
-          href={"data:image/png;base64," + imgCoded}
-          download={
-            "Carbon Label for " +
-            props.product +
-            " by " +
-            process.env.REACT_APP_CLIENT +
-            " " +
-            getDateLabel() +
-            ".png"
-          }
-        >
-          <Button>Download</Button>
-        </a>
-      </Row>
 
-      <Column>
+  function createLabels(arrImg) {
+    let val = Object.entries(arrImg).map((e) => {
+      return (
+        <CarbonSet>
+          <Row>
+            <PseudoCarbon>
+              <img src={"data:image/png;base64," + e[1]} width="50%" />
+            </PseudoCarbon>
+          </Row>
+          <Row>
+            <a
+              href={"data:image/png;base64," + e[1]}
+              download={
+                "Carbon Label for " +
+                props.product +
+                " by " +
+                process.env.REACT_APP_CLIENT +
+                " " +
+                getDateLabel() +
+                ".png"
+              }
+            >
+              <Button>Download</Button>
+            </a>
+          </Row>
+        </CarbonSet>
+      );
+    });
+
+    return val;
+  }
+  console.log(imgCoded);
+  return (
+    <BodyContainer show={props.show} isFAQ={true}>
+      {imgCoded ? createLabels(imgCoded) : <></>}
+      <Column isFAQ={true}>
         <FAQTitle>
           <h1>FAQ.</h1>
         </FAQTitle>
@@ -99,15 +104,12 @@ export function CarbonLabel(props) {
           </p>
         </FAQBox>
         <FAQBox>
-          <h4>How much is 1 kg of CO2e?</h4>
-          <p>
-            1 kg of CO2e is equivalent to:
-            <ul>
-              <li>2.5 miles driven in the average passenger vehicle</li>
-              <li> 122 smartphones charged</li>
-              <li> 1.1 lbs of coal burned</li>
-            </ul>
-          </p>
+          <h4>How much is 1 kg of CO2e?</h4>1 kg of CO2e is equivalent to:
+          <ul>
+            <li>2.5 miles driven in the average passenger vehicle</li>
+            <li> 122 smartphones charged</li>
+            <li> 1.1 lbs of coal burned</li>
+          </ul>
         </FAQBox>
         <FAQBox>
           <h4>What’s included in this value?</h4>

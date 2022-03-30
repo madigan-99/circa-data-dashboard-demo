@@ -4,13 +4,10 @@ import { Emissions } from "./screens/emissions.js";
 import { Other } from "./screens/other.js";
 import { CarbonLabel } from "./screens/carbon_labels.js";
 import Header from "./screens/header.js";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import React, { useContext, useState, createContext, useEffect } from "react";
-import { MenuContext } from "react-flexible-sliding-menu";
-import { Button } from "react-bootstrap";
+import { Routes, Route } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 
 function App() {
-  // const { toggleMenu } = useContext(MenuContext);
   const [product, setProduct] = useState(undefined);
   const [show, setShow] = useState(false);
   const [cradeltoGrave, setCradeltoGrave] = useState("1");
@@ -82,6 +79,7 @@ function App() {
           }
         />
       </Routes>
+      {/* <FooterComp /> */}
     </div>
   );
 }
