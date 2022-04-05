@@ -185,7 +185,7 @@ export function Emissions(props) {
           x: [...new Set(Object.values(fullData["Scope"]))],
           y: [...new Set(Object.values(fullData["Scope"]))].map((scope) => {
             return Object.entries(barChartData).filter(function (v, i) {
-              return v[1].Scope == scope && v[1]["Product Stage"] == e;
+              return v[1].Scope === scope && v[1]["Product Stage"] === e;
             }).length;
           }),
           text: e,
@@ -218,7 +218,7 @@ export function Emissions(props) {
             .map((ic) => {
               return Object.entries(barChartData).filter(function (v, i) {
                 return (
-                  v[1]["Impact Category"] == ic && v[1]["Product Stage"] == e
+                  v[1]["Impact Category"] === ic && v[1]["Product Stage"] === e
                 );
               });
             })

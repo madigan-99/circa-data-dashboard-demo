@@ -295,8 +295,7 @@ export const MenuDiv = styled.div`
   position: fixed;
   left: 0;
   top: 0;
-  padding-top: 4rem;
-  // transform: translate3d(-100vw, 0, 0);
+  padding-top: 6rem;
   width: 20vw;
   height: 100vh;
   display: ${(props) => (props.show ? "block" : "none")};

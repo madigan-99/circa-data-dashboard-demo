@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect } from "react";
 import {
   ValueBox,
   Row,
@@ -24,17 +24,8 @@ export function Other(props) {
   const [show, setShow] = useState(false);
   const [summary, setSummary] = useState(undefined);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
-  // const { product } =
-  // React.useContext(ProductContext) != undefined ? "Exists" : "Fail";
   const [fullDataDict, setFullDataDict] = useState(undefined);
 
-  const handler = (event) => {
-    const value = event.value;
-    selectScope(value);
-  };
   useEffect(() => {
     //  let temp = "http://127.0.0.1:5000/testpath";
     let scopes_url =
