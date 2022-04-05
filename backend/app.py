@@ -24,14 +24,6 @@ app = Flask(__name__)
 CORS(app)
 
 df = pd.read_csv('data3.csv').iloc[:,:-1] 
-# sheet_id = "1XqOtPkiE_Q0dfGSoyxrH730RkwrTczcRbDeJJpqRByQ"
-# sheet_name = "MASTER - LATEST ASSESSMENT DATA"
-# g_id = "954211548"
-# # url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}"
-# print(url)
-# sheet_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/edit#gid={g_id}"
-# url_1 = sheet_url.replace('/edit#gid=', '/export?format=csv&gid=')
-# df = pd.read_csv(url_1).iloc[:,:-1] 
 df = df[df.Client == os.environ.get("REACT_APP_CLIENT")]
 # Clean the data set to set NA values to 0 for summing values etc.,.
 df = df.fillna(0)
@@ -49,8 +41,6 @@ def hello():
 def productSelection():
     resp = df.Product.unique().tolist()
     return json.dumps(resp)
-
-
 
 @app.route('/summary_statistics/', defaults={'cradeltoGrave':'1', 'scope': 'all', 'product': None}, methods=['GET'])
 @app.route('/summary_statistics/<product>/<scope>/<cradeltoGrave>', methods=["GET"])
@@ -86,8 +76,6 @@ def makeBar(product, cradeltoGrave):
     filtered_products = df[df.Product == product]
     if cradeltoGrave == '2':
         filtered_products = filtered_products[filtered_products['Cradle-to-Grave Addition'] == 0]
-    # filtered_products['Scope'].round().astype(int)
-    # filtered_products.assign(Scope = filtered_products['Scope'].round(decimals = 0))
     filtered_products['Scope'] = filtered_products['Scope'].round().astype(int)
     filtered_products = filtered_products[["Product Stage", "Scope", "Impact Category", "Step", "Emissions (kg CO2e)", "Water (m3)", "Plastic (kg)"]]
     resp = pd.DataFrame.to_json(filtered_products)
@@ -198,16 +186,8 @@ def downloadImage(product):
     if(product == 'undefined'):
        product = json.loads(productSelection())[0]
     arrAns = downloadImageSet(product)
-    # img = Image.open("./footprint1.png")
-    # draw = ImageDraw.Draw(img)
-    # font = ImageFont.truetype("arial.ttf", 80, encoding="unic")
-    # emissions_val = json.loads(getsummary('all', product, '1')).get('total_emissions')
-    # draw.text((10, 10),str(emissions_val),font=font, fill="#fff")
-    # data = io.BytesIO()
-    # img.save(data, "png")
-    # encoded_img_data = base64.b64encode(data.getvalue())
-    # temp = encoded_img_data.decode() # not just image
     return json.dumps(arrAns)
+    
 def downloadImageSet(product):
     strings = {}
     for i in [1, 2, 3, 4]: 
